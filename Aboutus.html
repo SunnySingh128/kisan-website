@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color:rgba(0, 0, 0, 0);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-image: url('./kisanlaptop.jpg');
+  background-size: cover;
+  color:black;
+  font: 900px;;
+  
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.copyright-box{
+			float: left;
+			width: 100%;
+			font-family:calibri;
+			background: #0F6634;
+			text-align: center;
+			color: white;
+			font-size: 18px;
+		}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>The Kisan Portal aims to provide farmers with information related to agriculture,market prices, agricultural advisory, and government schemes and programs.</p>
+  <p>The "Kisan" website project could refer to a variety of initiatives aimed at providing support, information, and services to farmers. </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Kartikey Sharma</h2>
+        <p class="title">Team Lead</p>
+        <p>Responsible for Login Page Designing and Footer of the website</p>
+        <p>kartikeyedu01@gmail.com</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kartikeyedu01@gmail.com&su=SUBJECT"><p class="button">Contact</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Sunny Singh</h2>
+        <p class="title">Member</p>
+        <p style="margin-bottom: 35px;">
+            Responsible for Content Data and Functionality of website
+        </p>
+        <p>sunnysingh@gmail.com</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sunnysingh@gmail.com&su=SUBJECT"><p class="button">Contact</p></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Shreya</h2>
+        <p class="title">Member</p>
+        <p style="margin-bottom: 35px;">Respnsible for Navbar design and Content data</p>
+        <p>shreya24@gmail.com</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shreya24@gmail.com&su=SUBJECT"><p class="button">Contact</p></a>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Vanshika</h2>
+        <p class="title">Member</p>
+        <p>Responsible for Content designing and researching data</p>
+        <p>vanshika@gmail.com</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vanshika@gmail.com&su=SUBJECT"><p class="button">Contact</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="copyright-box">
+  <p>Kisan 2024 &copy; All Rights Reserved.</p>
+</div>
+</body>
+</html>

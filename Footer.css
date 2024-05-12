@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:250;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;*{*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(142, 197, 178);
+}
+
+
+.flex, .flex_one {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+ #logo {
+    width: 10vw;
+    height: 13vw;
+    border-radius: 50%;
+    
+} 
+label.logo{
+    font-size: 35px;
+    color:black;
+    margin-top: 0 100px;
+    line-height: 80px;
+    padding-left: 2vw;
+   
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    
+}
+nav ul li:hover{
+    background-color: rgb(126, 176, 159);
+}
+#checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+@media(max-width:895px){
+    label.logo{
+        font-size: 28px;
+    }
+    #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(126, 176, 159);
+        position: fixed;
+        top: 80px;
+        left:-100%;
+        transition: .5s;
+
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        
+    }
+}
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("back.jpg");
+    background-size: 100% 740px;
+}
+.contain{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    margin-left: 38%;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+}
+.contain h1{
+    font-size: 36px;
+    color: rgb(142,197,178);
+}
+.contain .text{
+    position: relative;
+    top: 7%;
+}
+.inp1{
+    border: none;
+    background-color: black;border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
+    width: 250px;
+    font-size: 17px;
+    margin-top: 40px;
+    outline: none;
+    color: white;
+}
+.inp2{
+    border: none;
+    background-color: black;border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
+    width: 250px;
+    font-size: 17px;
+    margin-top: 40px;
+    outline: none;
+    color: white;
+
+}
+.text button{
+    width: 250px;
+    height: 44px;
+    background-color: rgb(142,197,178);
+    color: black;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid rgb(142,197,178);
+    color: white;
+    font-size: 24px;
+    background-color: black;
+
+}
+p{
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+p span{
+    color: rgb(142,197,178);
+    cursor: pointer;
+}
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: rgb(126, 176, 159);
+    padding: 100px 100px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 25px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li a{
+	font-size: 18px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: white;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
