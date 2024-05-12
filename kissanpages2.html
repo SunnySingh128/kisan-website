@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: calibri;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            width: 100%;
+            height: 90px;
+            background-color: rgb(142, 197, 178);
+        }
+        
+        
+        .flex, .flex_one {
+            display: flex;
+            align-items: center;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+         #logo {
+            width: 10vw;
+            height: 13vw;
+            border-radius: 50%;
+            
+        } 
+        label.logo{
+            font-size: 35px;
+            color:black;
+            margin-top: 0 100px;
+            line-height: 80px;
+            padding-left: 2vw;
+           
+        }
+        nav ul{
+            float: right;
+            list-style-type: none;
+        
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+        
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            text-transform: capitalize;
+            padding: 8px 20px;
+            
+        }
+        nav ul li:hover{
+            background-color: rgb(126, 176, 159);
+        }
+        #checkbtn{
+            float: right;
+            line-height: 80px;
+            margin-right: 10px;
+            font-size: 30px;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+        @media(max-width:895px){
+            label.logo{
+                font-size: 28px;
+            }
+            #checkbtn{
+                display: block;
+            }
+            nav ul{
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(126, 176, 159);
+                position: fixed;
+                top: 80px;
+                left:-100%;
+                transition: .5s;
+        
+            }
+            
+        }
+        body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: rgb(126, 176, 159);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 25px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li a{
+	font-size: 18px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: white;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+        body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+video{
+
+width:100%;
+border:solid 10px black;
+
+        } 
+      pre{
+        background-color:green;
+      }
+        table{
+            background-color:yellow;
+            size:50px;
+        }
+        .container1{
+            display:flex;
+            justify-content:space-evenly;
+            height:200px;
+        }
+        .first,.second,.third,.fourth{
+          
+
+            border-radius:10%;
+        }
+        .first1,.second2,.third3,.fourth4{
+            font-size:35px;
+            margin-right:60px;
+            
+        }
+        .first2,.second3,.third4,.fourth5{
+            font-size:30px;
+            margin-left:20px;
+        }
+        .mahindra1{
+    text-align: center;
+    background-color:rgb(126, 176, 159);
+    border:solid 5px white;
+    outline:solid 2px black;
+}
+</style>
+</head>
+<body>
+    <nav class="flex">
+        <div class="flex_one">
+             <img src="./logo.jpeg" alt="" id="logo"> 
+            <label class="logo">KISAN</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check" name="" value="">
+            <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li id="home"><a class="active" href="C:\Users\Kartikey Sharma\OneDrive\Desktop\IP\Kisan\login\Content.html">Home</a></li>
+
+                <li><a href="C:\Users\Kartikey Sharma\OneDrive\Desktop\IP\Kisan\login\Aboutus.html">About us</a></li>
+            
+
+                <li><a href="https://www.kisanmandi.com/#:~:text=KisanMandi.com%20is%20the%20First,dream%20%22Sabko%20Sahi%20Mol%20%22.">Buy & Sell</a></li>
+                <li><a href="#">Apply Loan</a></li>
+                <li><a href="C:\Users\Kartikey Sharma\OneDrive\Desktop\IP\Kisan\login\Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <section>
+        <video autoplay loop muted>
+            <source src="video1.mp4" type="video/mp4">
+            </video>
+    </section>  
+    <br>
+    <h1 class="mahindra1">Different states with different crop insurances</h1>
+    <br>
+<div class="container1">
+<div class="first"><div class="first1"><a href="https://fasal.haryana.gov.in/"><img src="data:image/png;base64,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"></a></div><div class="first2">Haryana</div></div>
+<div class="second"><div class="second2"><a href="https://agri.punjab.gov.in/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHXSE7rk0PIY_SrptDEDxlE46iMshXtCkVoLFtY1iC3pINfF8pvZck&usqp=CAE&s"></a></div><div class="second3">Punjab</div></div>
+<div class="third"><div class="third3"><a href="https://agriculture.hp.gov.in/en/our-scheme/pradhanmantri-fasal-bima-yojna-pmfby/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkxrNDwQtOvt6TSTSAB2U9WwoLYjihPO6vq9-Uzy-5e2RVTVKKHpXp&usqp=CAE&s"></a></div><div class="third4">Himachal</div></div>
+<div class="fourth"><div class="fourth4"><a href="https://www.aicofindia.com/AICEng/Pages/Rajasthan_WBCIS.aspx"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDg-3bh3S7b1moxBj5eD64tcDqlxlyC1ufsjH94YA1QnDEYa1Xo3rBkGLECIUqKru390&s"></a></div><div class="fourth5">Rajasthan</div></div>
+</div>
+<br><br>
+<div class="container1">
+    <div class="first"><div class="first1"><a href="https://www.wbstcb.com/page/agricultural__insurance"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb93faiLKA4svwN3qZitplGQo5Vi9osfwMUwJGXMUcSFbVTrdixBqxNULMObwpVBuESw&s"></a></div><div class="first2">West Bengal</div></div>
+    <div class="second"><div class="second2"><a href="https://keralaagriculture.gov.in/en/crop-insurance-schemes/"><img src="data:image/jpeg;base64,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"></a></div><div class="second3">Kerela</div></div>
+    <div class="third"><div class="third3"><a href="https://www.mphorticulture.gov.in/en/related-to-department/statistics"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_33j16VUg4YckvkdtDUut-tCXCLXnyuEej2bCJmq5WnOb5WrsHGg&s"></a></div><div class="third4">Madhya Pardesh</div></div>
+    <div class="fourth"><div class="fourth4"><a href="https://upagripardarshi.gov.in/StaticPages/RastraKrishiBimaPrashan.aspx"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ESfK9RuwoTadlqhk2uQW3ucbs2EVDwQOLQHiZMns4YlpQNgg-rfmWZ2oPEXCRmvBpQ&s"></a></div><div class="fourth5">Uttar Pardesh</div></div>
+    </div>
+    <br><br>
+<div class="container1">
+    <div class="first"><div class="first1"><a href="https://www.goa.gov.in/wp-content/uploads/2021/07/Kavlekar-Launches-Crop-Insurance-Week.pdf"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABuCAMAAADxhdbJAAAAb1BMVEXx8e8AAAD////y8vD9/fv19fP4+Pb5+fn8/PyamprZ2dmmpqb29vZzc3O/v7/MzMySkpKgoKCHh4fFxcStra1ubm7k5OO1tbU/Pz8kJCQ2NjZFRUUxMTFLS0tcXFwpKSl8fHscHBwTExNkZGRTU1MiIfvaAAAEp0lEQVRoge2aaXerIBCGgRFQXEBFzB6z/P/feMFma6o2PWDO/ZC3J02MLY/AzDCMIvTRRx+9LLi83idD3wijNSbvYtlh5B0uKLiP848pAOswXjB40wSCwRhXhDFG5+XRjCJKQVrcYdeWhYTZeMA4r1vBjV5s8FVivv7JtML42GzxgxI2E4wu8ICOc40mS4ZwJwPPwP7Q+ypALId4q5/ewAB+XMPfFVVDuOVzNAPU2R77WxCVQzhc01tP+hgTddgwJBD1iwG20d7+l8vVenu841rWt+taB8qiiFiTqiVeCj8eoOjkTDFf55vu7niba+fs+aje5ut+Qi2y8BtPcMsAPuv902AWxBkGjQivHk+tqLe1sFydfk5eFTGKtFp9/3aTeMdvKlA3YCydFkNGq30DDi2OA82OSfqu96z4A21v/F3v/Dqu4N62EqnXcbXwTp4AbX/nXHXyDmTAyof2NufBNemmjnm7wkPcPFT4MMnbIM/cyU7+HZBi/Ozb37WgfsueDcLMOfR5u+ly0epiyOnvtMLXVgDZyWvWWuVq15TTfVNZgDQGRIGygcA5gOP+NGecFL1CC5UTUlG/hqtszuKf1YNolFpPe9yleyF6BxBFEeW7F7oXheFZ8bbKf8Ml3lGlpzGbAkEcky2eNNF15k+zLaxyVCsuSCYFL3f5YLLbqw3QO6C6X9L3J5tz5QWZGNIy8qY5x3v0u0U5SsONiUIk0zJ9iF7b9cQKv6g9wyZQKxbpnTGXJpOp8Tz61kNEazccyO7Kb4mESptR3Jr7rnhuEetrDuzWaDm+NLReO4U+CF4i4W1/WaHDGG1vgu1u4Tp7KzFqLftwlRfg1zi9KkZ5FfPfN1/EbyayfN4WfZu8QOLpKOTrIk7pKfdP3a+6Td6wFgYYC7IGXRStJ2j7NAtaD4TpLUNLssAFwZFaxJc2Sc38N8x3uUrDYXL2zmELdBD/kkBsA8KssnYah2XQ2YOpyXPKQyzod5z5pTZwDOflDgdTnof7ClZIDVcBb9oFruVOet5RhS7808kNpQkcxSCb3JrIkF7uLr2dtMzAXveL2ynPgu2z6GDx/aYqqI87L1eHCdwuDkuzpoJ+VG/vOvsX4Z6AAPFE0dFugYLfQ5mwl3OwpO8BR0fjZjfD/USA3YjzuWJ7+BtSgORp0F40m+VmKdBsyAG7bAZWz8sGyixVgMLDCA6G8vegAfoJ+Jy/H4+72e4C24bpvSbeL4GVDJw3fMM99C4h8ogbwWZ8JsIO2614pCnJd1Hgtec7Da45y7nB25jWck5av1swVYNVHRFTMqAzP1zieHEsIxu1KOsP3/DsxawjOKT34t7xsMxHH3300f8jeKtQ9FYh8laN4GJCROx+9x/j+PqtYe7geibuz3B3xGP7kZOvE9f3V3HuPxWyb7VIM9uSfdl3RjKNbFOZ/eE8c3+YVYlWtUpkKZJEqjZVqDWtMo35U+9ILhKVFmnSdnVum+xEJVVS2uYE0W1bpp1SBUltp8qKdGVVW6AyJk3SoimIMoX4G86UpUmKsjCp0CblQmvRtjnRypAEpSJJa6FtJ0nJK6RlwU0rNEqJsd9XUhRypHf/ACvWPlHj0JAlAAAAAElFTkSuQmCC"></a></div><div class="first2">Goa</div></div>
+    <div class="second"><div class="second2"><a href="https://diragrikmr.nic.in/assets/files/PMFBY_Kashmir0001.pdf"><img src="data:image/jpeg;base64,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"></a></div><div class="second3">Jammu</div></div>
+    <div class="third"><div class="third3"><a href="https://agri.arunachal.gov.in/?p=submenupagecontent&pg=1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkxojwxtn8lAK8c6vvF5bMKeh79LJbGu823JIa-ayZcPpJrCDM-GxK&usqp=CAE&s"></a></div><div class="third4">Arunchal pardesh</div></div>
+    <div class="fourth"><div class="fourth4"><a href="https://services.india.gov.in/service/detail/crop-insurance-application-form-andhra-pradesh"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAk1BMVEX///8AAAAREiQBBB5KSk/5+fn8/Pzs7Ozi4uL09PTQ0NDf39+Hh4fFxcVbW1uXl5d3d3doaGiysrIvLy8ZGRmsrKxRUVG9vb0hISFKSkqenp7Y2NgKCyBAQECQkJCmpqYAABc3Nzd/f38QEBB2eIBYWWMoKCgMDR0eHigoKTdmaHE2N0BgYGlRUllMTViFhY4/QEltUx23AAAEK0lEQVRoge2YaXeiPBSAk2qI7AkurGLBZVpc6v//de8NdjqyhCUy57wf5umx0AqP15Dc3AShf/w/oIsF1U0dUYrgDCFtsTAJ0uHVi01/TiVXM4xdD28R3xAMGPoK4wX8d91jJiQNrO9zLU4lV4UO8jC2mUNAyLFOsYHIar/pkVtLjFfZI3YTY8lVW5Cf8q2Q75CBDSG3sY+p5PrfZOKLumXgW+x0RQ5NwkXkNo6FnAURfFIHccxxCdvZu1w0ZCs0C3UPozWGyC37tAX/GmGHZWGH28BVbMl17BS4/pJoISNZcMqJvlzu13uKutqFLKvuqOtLPt+nPY56+9umXx7cilvW4NAsbJdHaRq53ObIZcxde1bEIxZZRvNiHWfwARTxZ3cuDzXiKXfzfG3xaGOmBncZtyzuM562yBcYnjM87fDJ3dVnCbQEIUiDUYnKo0Z0pOsUaVrzYh86X4irbdLXZQfDcQ0nnsgM+SOqqsPJ1BHmXtUtSyijcff1FsFW/13DoJuGm0/lTlcNd29iG0rcVOOWUaAGa6gDWaoaj1N3ewMmwWFofr2bTDYo6a6uliTM0RBImlX1VjLnjARqDVSPGrNp1PZqtYvrw7IjdQ/GP6X1WbIkMydwg0cXE0MdPsHI0QMYJW6LvHPWGYIRfxcOzTT4YrIyUiga3JYs9Y2vbCZWM69WcdTHj92nfmX8eJ1q9lpPaesewNbQCY1eylWGkzfqhgevp8B1I2X/BP6CVbO3W4fHS5l7dO/z08iLv79taw55Ihvpth63bbjjsA73JoJaZTm2Z+c9wT6aWiTA5fgc2zdYBGFZ4sb26Im4WSg0Ua0wadDvPqmWDvqpX965TOxk3et+ZeD0dhf1wPvSH5avWXvF9GcUyVGdEzgOJdlvAjmSp6g/qM4LWtukXmfoWr6O269WL0+kk0IFxdE/KCUqrzDtIbF7ivL6GqQV1coK8pbtrXrGkXL5Y/gaonF326u6zUwT9U93d1eVI+7EZtSpfqEQolAhWyK/BJutTN631ypFDxjPRIbZoCiXZJqsZQtqEH7gilpowwksM8N2ufIEXUKtMjYqea77aRbgjtPa8BOsCUta546ptpiyZpuY1Jhoz8N9KpJESbOcbNNNQP4kGtP3nMn2aR78PFJrYjEqy5g9h5bPp+oiT2gnvCZIN15YwUqxIfmqDvZeN55wb7OON+FwbMpT5dl4CJNtEv6jhflfBM3+IuhNkCSzBF6/PpLZO5y+fb6pkVTOE5D/Ko6X8+Uwv96iL/d4mBfp5ZZI75fyDny+v0OMcPL2+Xn+PIN8VuTF4eNydPjH7uuLRTj+mI01zw6sKIqD+LkenUNxFKcFyJP7+Xg/3m/Xs3iHzYvrZXTgyfl+u93Ot/n1er7d7vf7Bf4QkZctPit//WasWziqiGeYoPGe4fwHbnpH0vNbqHYAAAAASUVORK5CYII="></a></div><div class="fourth5">Andra pardesh</div></div>
+    </div>
+    <br><br>
+    <div class="container1">
+    <div class="first"><div class="first1"><a href="https://dag.gujarat.gov.in/farmers-accidental-insurance-scheme.htm"><img src="data:image/jpeg;base64,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"></a></div><div class="first2">Gujarat</div></div>
+    <div class="second"><div class="second2"><a href="https://dbtagriculture.bihar.gov.in/krishimis/WebPortal/AboutUs.aspx"><img src="data:image/jpeg;base64,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"></a></div><div class="second3">Bihar</div></div>
+    <div class="third"><div class="third3"><a href="https://agri-horti.assam.gov.in/frontimpotentdata/crop-insurance-0"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBEQACEQEDEQH/xAAaAAEBAAMBAQAAAAAAAAAAAAAAAgMEBQEH/8QAKxAAAwACAAQEBAcAAAAAAAAAAAECAxEEEiFREzFhcQUyQZEUFSIzU2Kh/8QAGAEBAAMBAAAAAAAAAAAAAAAAAAECBAP/xAAfEQEBAAEEAwEBAAAAAAAAAAAAAQIDERIxEyFRYUH/2gAMAwEAAhEDEQA/APuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACbyRC3dJL1ZFyk7TJb01cnHwukS69fI5XWn8dJo29sU8VkzZZjm5Jb09HOamWWUnS905jN+3RNTOAAAAAAAAYOLz+DHT5n5HPUz4xfDDlXLqquua22/UyW23etckk2hM1T1MtvshJb0Wydt3FwC5U8lNV/X6GjHR+uGWt8bx3cEZsixY3deSK5ZTGb1OM5XaNJfEK5usLl7b6nDz3fp28PrtX5gv4n9yfP8Ah4f1L+IVvpjX3I89+J8E+pri89fLqfZEXVzvSZp4TtgdZW+Z1e++znvl2vtj09/EZtfuV9yfJl9OGPxFVVPdU2+7ZW23taSTpsYODvI07/TH+s6YaVvblnqydOjjxzjnlhJI1SSdM9tvaiUAGl8TpqIn6N9Thr31I7aM91p+Dl1tY617HDhl8dueP1DTT000V2WVjxXlbUS3otjjcukZZTHtlrFxES6qdJeqL3HOTeqTLC3aMXPWtbOfKr8YghLNw2Lxc0y10837F9PHlkpnlxjrm1kAAACLhW55ltS9kWbpl2WShNRNrVSmvVEWS9pls6Iicc8sSkvQSSdFtvbzLjWWHFNpPsRljymxLZd45vFcP4DT5ty307mXU0+LVhqckcPhefJy70l1bIww5XYzz4x1olRKmV0Rskk9Mlu6iQAAAAAAAAAaPHZ4c1iS3XfscNXObcXbSwu/JHw7G3keTrqenuV0cfe62tl62dE0s4AAAAAAAAAxcTdRgqo80UztmNsWwkuUlcp+JldXp0/q9GT3l7a/WPp1sGNY8Uyu3U2YY7TZkyu93ZCyoAAAAAAAAA8aTWmBOLFGJahaW9lccZj0m5XLtZZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q=="></a></div><div class="third4">Assam</div></div>
+    <div class="fourth"><div class="fourth4"><a href="https://agriculture.uk.gov.in/pages/display/266-pmfby-guideline"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbJZ3guf9545EU2crCqwtdwOceyQmmFwKMnouIeAXvRC0OeW-9egaSg4s&s"></a></div><div class="fourth5">uttrakhand</div></div>
+    </div>
+    <br><br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Kisan</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Government schemes</a></li>
+                    <li><a href="#">Machinery</a></li>
+                    <li><a href="#">About Market</a></li>
+                    <li><a href="#">Rates</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer> 
+</body>
+</html>
