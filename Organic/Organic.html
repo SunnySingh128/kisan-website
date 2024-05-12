@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="organic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="flex">
+        <div class="flex_one">
+             <img src="./logo.jpeg" alt="" id="logo"> 
+            <label class="logo">KISAN</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check" name="" value="">
+            <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li id="home"><a class="active" href="C:\Users\Kartikey Sharma\OneDrive\Desktop\IP\Kisan\login\Content.html">Home</a></li>
+
+                <li><a href="C:\Users\Kartikey Sharma\OneDrive\Desktop\IP\Kisan\login\Aboutus.html">About us</a></li>
+            
+
+                <li><a href="https://www.kisanmandi.com/#:~:text=KisanMandi.com%20is%20the%20First,dream%20%22Sabko%20Sahi%20Mol%20%22.">Buy & Sell</a></li>
+                <li><a href="#">Apply Loan</a></li>
+                <li><a href="C:\Users\Kartikey Sharma\OneDrive\Desktop\IP\Kisan\login\Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="./assets/Animation1.jpeg" alt="Image 1" class="slider-img">
+            <img src="./assets/Animation2.jpeg" alt="Image 2" class="slider-img">
+            <img src="./assets/Animation3.jpeg" alt="Image 3" class="slider-img">
+        </div>
+        <button class="prev" onclick="prevImage()">< </button>
+        <button class="next" onclick="nextImage()">></button>
+    </div>
+
+    <div class="organic_farm">
+        <div class="about_org">
+            <img src="./assets/Introimg.jpeg" alt="introduction" class="intro_org">
+        </div>
+        <div class="about_organic">
+            <h2>About Organic Farming</h2>
+            <p>Organic farming is an agricultural approach that emphasizes the use of natural inputs and techniques to cultivate crops and raise livestock. Unlike conventional farming, which often relies heavily on synthetic fertilizers, pesticides, and genetically modified organisms (GMOs), organic farming avoids these inputs and instead focuses on building soil health, promoting biodiversity, and maintaining ecological balance.</p>
+            <p>
+                Dive into the world of farmers with exquisite knowledge of Organic Farming.
+            </p>
+            <div class="know_more">
+                <button id="toggleButton">Know More </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="see_more">
+        <p id="aboutorganic_farm" class="hidden">
+            Key principles of organic farming include: <br> <br>
+            1.	Soil Health: Organic farmers prioritize soil fertility through practices such as crop rotation, composting, and the use of organic fertilizers like manure and plant-based compost.
+                Healthy soil supports strong plant growth and resilience to pests and diseases. <br> <br>
+            2.	Biodiversity: Organic farming encourages biodiversity by avoiding monoculture (growing only one crop) and promoting mixed cropping, agroforestry, and habitat conservation.
+                   Diverse ecosystems help control pests and diseases naturally and improve overall farm resilience. <br><br>
+            3. Natural Pest and Weed Management: Instead of synthetic pesticides and herbicides, organic farmers use integrated pest management (IPM) strategies,
+                 which may include beneficial insects, crop rotation, trap cropping, and physical barriers to manage pests and weeds. <br><br>
+            4. Avoidance of Synthetic Inputs: Organic farming prohibits the use of synthetic fertilizers, pesticides, herbicides, and GMOs.
+                   Farmers rely on organic-certified inputs and methods to meet the nutritional needs of crops and manage pests and weeds. <br><br>
+            5.  Animal Welfare: Organic livestock farming emphasizes the humane treatment of animals, providing access to outdoor areas, pasture grazing, and organic feed.
+                 Antibiotics and growth hormones are prohibited, and preventive healthcare measures are prioritized.<br><br>
+            6. Certification: Organic farming is regulated by certification bodies that verify compliance with organic standards.
+                 Farmers must adhere to strict guidelines and undergo regular inspections to maintain organic certification. <br><br>
+                 Overall, organic farming aims to produce food in a more environmentally sustainable and socially responsible manner, 
+                 minimizing negative impacts on soil, water, and air quality while promoting the health and well-being of farm ecosystems, workers, and consumers.<br> <br>
+        </p>
+    </div>
+
+    <div>
+        <h2 class="h2">Methods of Organic Farming</h2>
+        <div class="types_img">
+            <div class="bg_div"><img src="./assets/vermicompost.jpeg" alt="vermicompost"></div>
+            <div class="bg_div"><img src="./assets/manures.jpeg" alt="manures"></div>
+            <div class="bg_div"><img src="./assets/Biofertilizers.jpeg" alt="Biofertilizers"></div>
+            <div class="bg_div"><img src="./assets/Animalhusbandary.jpeg" alt="Animalhusbandary"></div>
+            <div class="bg_div"><img src="./assets/Croprotation.jpeg" alt="Croprotation"></div>
+            <div class="bg_div"><img src="./assets/Biologicalmanagement.jpeg" alt="Biological management"></div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h2 class="popup-title" id="popup-title"></h2>
+            <p class="popup-description" id="popup-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>Kisan 2024 &copy; All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

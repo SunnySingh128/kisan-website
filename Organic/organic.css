@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(142, 197, 178);
+}
+
+
+.flex, .flex_one {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+ #logo {
+    width: 10vw;
+    height: 13vw;
+    border-radius: 50%;
+    
+} 
+label.logo{
+    font-size: 35px;
+    color:black;
+    margin-top: 0 100px;
+    line-height: 80px;
+    padding-left: 2vw;
+   
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    
+}
+nav ul li:hover{
+    background-color: rgb(126, 176, 159);
+}
+#checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+
+
+.carousel {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+
+.carousel-images {
+    display: flex;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 45%;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover {
+    font-size: 2.5vw;
+}
+
+.next:hover {
+    font-size: 2.5vw;
+}
+.organic_farm {
+    margin: 4vw 0vw 3vw 1.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.about_org {
+    width: 50%;
+}
+
+.intro_org {
+    width: 38vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.about_organic {
+    width: 50%;
+    margin-left: -5vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.know_more {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0vw 3vw 0vw 0vw;
+}
+
+#toggleButton {
+    display: flex;
+    background-color: rgb(126, 176, 159);
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 1vw;
+}
+
+.about_organic h2 {
+    font-size: 2.8vw;
+    margin-bottom: 1vw;
+}
+
+.about_organic p {
+    font-size: 1.3vw;
+    font-weight: 400;
+    width: 98%;
+    color: rgb(142, 140, 140);
+    margin-bottom: 2vw;
+}
+
+.see_more {
+    margin: 3.6vw;
+}
+
+.hidden {
+    font-size: 1.3vw;
+    font-weight: 400;
+    width: 99%;
+    color: rgb(142, 140, 140);
+    display: none;
+}
+
+.h2 {
+    text-align: center;
+    margin-top: 6vw;
+    font-size: 4vw;
+    font-weight: 900;
+    word-spacing: .5vw;
+}
+
+.types_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bg_div {
+    background-color: rgb(229, 229, 229);
+    width: 27vw;
+    height: 18vw;
+    margin: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px rgb(188, 225, 213);
+}
+
+.types_img img{
+    width: 23vw;
+    height: 14vw;
+    border-radius: 5px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    height: 70%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+.footer {
+    width: 100%;
+    font-family: calibri;
+    background-color: rgb(142, 197, 178);
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+}
+
+
+@media(max-width:895px){
+    label.logo{
+        font-size: 28px;
+    }
+    #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(126, 176, 159);
+        position: fixed;
+        top: 80px;
+        left:-100%;
+        transition: .5s;
+
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        
+    }
+
+    
+}
